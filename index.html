@@ -1,97 +1,180 @@
-<!-- Sección de Demostración Interactiva -->
-<section class="max-w-6xl mx-auto px-6 py-16">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
-        <!-- Efecto de luz de fondo -->
-        <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider bg-blue-950/60 border border-blue-800/50 px-3 py-1 rounded-full">Simulador en Vivo</span>
-            <h2 class="text-2xl md:text-3xl font-bold mt-3 mb-2">Panel de Control y Diagnóstico Técnico</h2>
-            <p class="text-slate-400 text-sm">Explora el estado operativo de los sistemas de infraestructura y bases de datos integradas.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Castrillo | Consultoría en Infraestructura y Sistemas Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-900/80 sticky top-0 z-50 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-blue-400">Mario Castrillo <span class="text-xs text-slate-400 block font-normal">Consultor TI</span></span>
+            <a href="https://wa.me/584226445892?text=Hola%20Mario,%20vi%20tu%20web%20de%20consultor%C3%ADa%20y%20me%20interesa%20conversar%20sobre%20un%20proyecto%20t%C3%A9cnico." target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg font-medium transition">Contactar WhatsApp</a>
         </div>
+    </header>
 
-        <!-- Pestañas de Navegación -->
-        <div class="flex justify-center gap-3 mb-8">
-            <button onclick="switchTab('redes')" id="btn-redes" class="px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20">🛡️ Redes y Seguridad (MikroTik)</button>
-            <button onclick="switchTab('sistemas')" id="btn-sistemas" class="px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white">🔄 Sistemas Legacy & Web</button>
-        </div>
-
-        <!-- Contenido de Redes -->
-        <div id="tab-redes" class="grid md:grid-cols-3 gap-6 transition-all duration-300">
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">ESTADO DEL FIREWALL</span>
-                    <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
-                </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">Protegido (Activo)</div>
-                <p class="text-xs text-slate-400">Bloqueo de fuerza bruta y puertos RDP públicos operando sin incidentes.</p>
-            </div>
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">TÚNELES VPN (OpenVPN)</span>
-                    <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
-                </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">Cifrado AES-256</div>
-                <p class="text-xs text-slate-400">Conexiones remotas de sucursales estables y autenticadas.</p>
-            </div>
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">SEGMENTACIÓN VLAN</span>
-                    <span class="text-xs text-blue-400 font-bold bg-blue-950 px-2 py-0.5 rounded">Optimizado</span>
-                </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">Tráfico Aislando</div>
-                <p class="text-xs text-slate-400">Dispositivos de usuario separados de servidores críticos.</p>
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+                Estabilidad de Redes y Modernización de Sistemas Legacy
+            </h1>
+            <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+                Ayudo a las empresas a blindar su infraestructura de red y a conectar software antiguo (Visual FoxPro) con plataformas web modernas (SQL Server, PHP, Angular).
+            </p>
+            <div class="flex gap-4">
+                <a href="#servicios" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold transition">Ver Servicios</a>
+                <a href="https://wa.me/584226445892?text=Hola%20Mario,%20quiero%20cotizar%20un%20proyecto%20t%C3%A9cnico." target="_blank" class="border border-slate-700 hover:border-slate-500 px-6 py-3 rounded-lg font-semibold transition">Cotizar Proyecto</a>
             </div>
         </div>
+        <div class="bg-slate-800/50 border border-slate-700/60 p-8 rounded-2xl shadow-xl">
+            <h3 class="text-xl font-bold mb-4 text-blue-400">Áreas de Especialidad</h3>
+            <ul class="space-y-3 text-slate-300">
+                <li class="flex items-center gap-2">🛡️ Routers, Firewalls y VPNs (MikroTik / pfSense)</li>
+                <li class="flex items-center gap-2">🔄 Migración de Bases de Datos (FoxPro a SQL/MariaDB)</li>
+                <li class="flex items-center gap-2">💻 Desarrollo Backend y Paneles Web (PHP / Angular)</li>
+            </ul>
+        </div>
+    </section>
 
-        <!-- Contenido de Sistemas (Oculto por defecto) -->
-        <div id="tab-sistemas" class="hidden grid md:grid-cols-3 gap-6 transition-all duration-300">
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">ORIGEN (LEGACY)</span>
-                    <span class="text-xs text-amber-400 font-bold bg-amber-950/50 px-2 py-0.5 rounded">Visual FoxPro</span>
+    <!-- Servicios -->
+    <section id="servicios" class="bg-slate-950/50 py-20 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Soluciones Tecnológicas</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Infraestructura y Redes</h3>
+                    <p class="text-slate-400 mb-4">Diseño, configuración y auditoría de redes seguras para garantizar la continuidad operativa de tu empresa u oficina remota.</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300">
+                        <li>Enrutamiento avanzado y reglas de Firewall (MikroTik / pfSense).</li>
+                        <li>Túneles de acceso remoto seguros (OpenVPN).</li>
+                        <li>Segmentación de red mediante VLANs.</li>
+                    </ul>
                 </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">Tablas DBF / SQL</div>
-                <p class="text-xs text-slate-400">Extracción y lectura de registros históricos de bases de datos antiguas.</p>
-            </div>
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">BACKEND Y API</span>
-                    <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span></span>
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Sistemas Legacy y Web</h3>
+                    <p class="text-slate-400 mb-4">Dale nueva vida a tus sistemas operativos antiguos sin interrumpir el funcionamiento diario del negocio.</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300">
+                        <li>Extracción y migración de datos desde bases de datos heredadas.</li>
+                        <li>Desarrollo de paneles web modernos y APIs en PHP.</li>
+                        <li>Interfaces eficientes conectadas con Angular.</li>
+                    </ul>
                 </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">PHP / Endpoints</div>
-                <p class="text-xs text-slate-400">Procesamiento de consultas y estructuración limpia en formato JSON.</p>
-            </div>
-            <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="text-xs text-slate-400 font-medium">INTERFAZ MODERNA</span>
-                    <span class="text-xs text-emerald-400 font-bold bg-emerald-950/50 px-2 py-0.5 rounded">Angular / Web</span>
-                </div>
-                <div class="text-lg font-bold text-slate-100 mb-1">Paneles Interactivos</div>
-                <p class="text-xs text-slate-400">Visualización fluida, filtros rápidos y gestión desde el navegador.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Script para la interactividad de las pestañas -->
-<script>
-    function switchTab(tab) {
-        const tabRedes = document.getElementById('tab-redes');
-        const tabSistemas = document.getElementById('tab-sistemas');
-        const btnRedes = document.getElementById('btn-redes');
-        const btnSistemas = document.getElementById('btn-sistemas');
+    <!-- Sección de Demostración Interactiva -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-        if (tab === 'redes') {
-            tabRedes.classList.remove('hidden');
-            tabSistemas.classList.add('hidden');
-            btnRedes.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20";
-            btnSistemas.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white";
-        } else {
-            tabSistemas.classList.remove('hidden');
-            tabRedes.classList.add('hidden');
-            btnSistemas.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20";
-            btnRedes.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white";
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider bg-blue-950/60 border border-blue-800/50 px-3 py-1 rounded-full">Simulador en Vivo</span>
+                <h2 class="text-2xl md:text-3xl font-bold mt-3 mb-2">Panel de Control y Diagnóstico Técnico</h2>
+                <p class="text-slate-400 text-sm">Explora el estado operativo de los sistemas de infraestructura y bases de datos integradas.</p>
+            </div>
+
+            <!-- Pestañas de Navegación -->
+            <div class="flex justify-center gap-3 mb-8">
+                <button onclick="switchTab('redes')" id="btn-redes" class="px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20">🛡️ Redes y Seguridad (MikroTik)</button>
+                <button onclick="switchTab('sistemas')" id="btn-sistemas" class="px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white">🔄 Sistemas Legacy & Web</button>
+            </div>
+
+            <!-- Contenido de Redes -->
+            <div id="tab-redes" class="grid md:grid-cols-3 gap-6 transition-all duration-300">
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">ESTADO DEL FIREWALL</span>
+                        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Protegido (Activo)</div>
+                    <p class="text-xs text-slate-400">Bloqueo de fuerza bruta y puertos RDP públicos operando sin incidentes.</p>
+                </div>
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">TÚNELES VPN (OpenVPN)</span>
+                        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Cifrado AES-256</div>
+                    <p class="text-xs text-slate-400">Conexiones remotas de sucursales estables y autenticadas.</p>
+                </div>
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">SEGMENTACIÓN VLAN</span>
+                        <span class="text-xs text-blue-400 font-bold bg-blue-950 px-2 py-0.5 rounded">Optimizado</span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Tráfico Aislando</div>
+                    <p class="text-xs text-slate-400">Dispositivos de usuario separados de servidores críticos.</p>
+                </div>
+            </div>
+
+            <!-- Contenido de Sistemas (Oculto por defecto) -->
+            <div id="tab-sistemas" class="hidden grid md:grid-cols-3 gap-6 transition-all duration-300">
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">ORIGEN (LEGACY)</span>
+                        <span class="text-xs text-amber-400 font-bold bg-amber-950/50 px-2 py-0.5 rounded">Visual FoxPro</span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Tablas DBF / SQL</div>
+                    <p class="text-xs text-slate-400">Extracción y lectura de registros históricos de bases de datos antiguas.</p>
+                </div>
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">BACKEND Y API</span>
+                        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span></span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">PHP / Endpoints</div>
+                    <p class="text-xs text-slate-400">Procesamiento de consultas y estructuración limpia en formato JSON.</p>
+                </div>
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">INTERFAZ MODERNA</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-950/50 px-2 py-0.5 rounded">Angular / Web</span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Paneles Interactivos</div>
+                    <p class="text-xs text-slate-400">Visualización fluida, filtros rápidos y gestión desde el navegador.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">¿Listo para optimizar tu infraestructura?</h2>
+        <p class="text-slate-400 mb-8">Escríbeme directamente para evaluar tu proyecto técnico de forma personalizada.</p>
+        <a href="https://wa.me/584226445892?text=Hola%20Mario,%20estoy%20listo%20para%20optimizar%20la%20infraestructura%20de%20mi%20empresa." target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl text-lg transition">
+            Iniciar Conversación por WhatsApp
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Mario Castrillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para la interactividad de las pestañas -->
+    <script>
+        function switchTab(tab) {
+            const tabRedes = document.getElementById('tab-redes');
+            const tabSistemas = document.getElementById('tab-sistemas');
+            const btnRedes = document.getElementById('btn-redes');
+            const btnSistemas = document.getElementById('btn-sistemas');
+
+            if (tab === 'redes') {
+                tabRedes.classList.remove('hidden');
+                tabSistemas.classList.add('hidden');
+                btnRedes.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20";
+                btnSistemas.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white";
+            } else {
+                tabSistemas.classList.remove('hidden');
+                tabRedes.classList.add('hidden');
+                btnSistemas.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-blue-600 text-white shadow-lg shadow-blue-600/20";
+                btnRedes.className = "px-5 py-2.5 rounded-xl font-medium text-sm transition bg-slate-800 text-slate-400 hover:text-white";
+            }
         }
-    }
-</script>
+    </script>
+</body>
+</html>
