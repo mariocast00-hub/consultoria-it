@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Castrillo | Consultoría en Infraestructura y Sistemas Legacy</title>
     
-    <!-- Meta etiquetas Open Graph (OG) para LinkedIn, WhatsApp y Redes Sociales -->
+    <!-- Meta etiquetas Open Graph (OG) -->
     <meta property="og:title" content="Mario Castrillo | Consultoría en Infraestructura y Sistemas Legacy">
     <meta property="og:description" content="Especialista en estabilidad de redes (MikroTik/pfSense), seguridad VPN y modernización de sistemas legacy (Visual FoxPro a SQL Server/MariaDB y web con PHP/Angular).">
     <meta property="og:type" content="website">
@@ -91,7 +91,7 @@
             </div>
 
             <!-- Contenido de Redes -->
-            <div id="tab-redes" class="grid md:grid-cols-3 gap-6 transition-all duration-300">
+            <div id="tab-redes" class="grid md:grid-cols-3 gap-6">
                 <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-xs text-slate-400 font-medium">ESTADO DEL FIREWALL</span>
@@ -100,4 +100,24 @@
                     <div class="text-lg font-bold text-slate-100 mb-1">Protegido (Activo)</div>
                     <p class="text-xs text-slate-400">Bloqueo de fuerza bruta y puertos RDP públicos operando sin incidentes.</p>
                 </div>
-                <div class="bg-slate-
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">TÚNELES VPN (OpenVPN)</span>
+                        <span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Cifrado AES-256</div>
+                    <p class="text-xs text-slate-400">Conexiones remotas de sucursales estables y autenticadas.</p>
+                </div>
+                <div class="bg-slate-950/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs text-slate-400 font-medium">SEGMENTACIÓN VLAN</span>
+                        <span class="text-xs text-blue-400 font-bold bg-blue-950 px-2 py-0.5 rounded">Optimizado</span>
+                    </div>
+                    <div class="text-lg font-bold text-slate-100 mb-1">Tráfico Aislado</div>
+                    <p class="text-xs text-slate-400">Dispositivos de usuario separados de servidores críticos.</p>
+                </div>
+            </div>
+
+            <!-- Contenido de Sistemas (Oculto por defecto) -->
+            <div id="tab-sistemas" class="hidden grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-950/60 border border-slate-8
